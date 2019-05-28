@@ -1,0 +1,10 @@
+Usage:
+
+    apt install openvpn || yum install openvpn
+    cd /etc/openvpn
+    openvpn-instant-config --ssl joe fred harry
+    systemctl enable openvpn@server
+    systemctl start openvpn@server
+
+That creates server.conf, and {joe,fred,harry}.ovpn, which can work out of the
+box.
