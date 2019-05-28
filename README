@@ -6,5 +6,5 @@ Usage:
     systemctl enable openvpn@server
     systemctl start openvpn@server
 
-That creates server.conf, and {joe,fred,harry}.ovpn, which can work out of the
-box.
+That creates server.conf in tls-server mode, and {joe,fred,harry}.ovpn, which can work out of the
+box on clients.
