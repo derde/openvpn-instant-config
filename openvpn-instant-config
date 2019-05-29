@@ -7,8 +7,9 @@ openvpn=`type -p openvpn`
 clientconfig() {
     NAME="$1"
     OVPN="$2"
+    [ -f $OVPN ] ||
     echo > $OVPN "remote `hostname -f`
-port 1194
+rport 1194
 dev tun
 tun-mtu 1500
 client
